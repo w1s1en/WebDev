@@ -11,8 +11,7 @@
             margin-bottom: 0px;
         }
         .thumbnail{
-            width: 300px;
-            display: block;
+            width: 100%;
         }
         .search_bar{
             font-size: 20px;
@@ -27,20 +26,10 @@
             line-height: 20px;
             margin-bottom: 12px;
         }
-        .video_preview{
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 15px;
-        }
-        .channel_pic{
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
-        }
-        .video_info{
-            display: inline-block;
-            width: 220px;
+
+        .video_info_grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
         .profile_pic{
             width: 40px;
@@ -57,18 +46,25 @@
         .video_author{
             margin-bottom: 4px;
         }
+        .video_grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 40px;
+        }
+        
          
 
     </style>
 </head>
 <body>
     <input class="search_bar" type="textbox" placeholder="Search">
-
+<div class="video_grid">
     <div class="video_preview">
         <div class="thumbnail_row">
             <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
         </div>
-        <div>
+        <div class="video_info_grid">
             <div class="channel_pic">
                 <img class="profile_pic" src="channel_pic/channel-1.jpeg">
             </div>
@@ -89,7 +85,7 @@
         <div class="thumbnail_row">
             <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
         </div>
-        <div>
+        <div class="video_info_grid">
             <div class="channel_pic">
                 <img class="profile_pic" src="channel_pic/channel-1.jpeg">
             </div>
@@ -106,3 +102,91 @@
             </div>
         </div>
     </div>
+
+    <div class="video_preview">
+        <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
+        <div class="video_info_grid">
+            <div class="channel_pic">
+                <img class="profile_pic" src="channel_pic/channel-1.jpeg">
+            </div>
+            <div class="video_info">
+                <p class=video_title >
+                    Talking Tech and AI witch Google CEO Sundar Pichai!
+                </p>
+                <p class="video_author">
+                    Marques Brownlee
+                </p>
+                <p class="video_stats">
+                    3,4M views &#183; 6 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video_preview">
+        <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video_info_grid">
+            <div class="channel_pic">
+                <img class="profile_pic" src="channel_pic/channel-1.jpeg">
+            </div>
+            <div class="video_info">
+                <p class=video_title >
+                    Try Not To Laugch Challenge #9
+                </p>
+                <p class="video_author">
+                    Markiplier
+                </p>
+                <p class="video_stats">
+                    19M views &#183; 4 years ago
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video_preview">
+        <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
+        <div class="video_info_grid">
+            <div class="channel_pic">
+                <img class="profile_pic" src="channel_pic/channel-1.jpeg">
+            </div>
+            <div class="video_info">
+                <p class=video_title >
+                    Talking Tech and AI witch Google CEO Sundar Pichai!
+                </p>
+                <p class="video_author">
+                    Marques Brownlee
+                </p>
+                <p class="video_stats">
+                    3,4M views &#183; 6 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video_preview">
+        <div class="thumbnail_row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video_info_grid">
+            <div class="channel_pic">
+                <img class="profile_pic" src="channel_pic/channel-1.jpeg">
+            </div>
+            <div class="video_info">
+                <p class=video_title >
+                    Try Not To Laugch Challenge #9
+                </p>
+                <p class="video_author">
+                    Markiplier
+                </p>
+                <p class="video_stats">
+                    19M views &#183; 4 years ago
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+   
