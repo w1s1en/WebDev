@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14e</title>
+    <style>
+        div,
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .photo{
+            width: 40px;
+            margin-right: 20px;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 60px;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .lewa{
+            display: flex;
+            align-items: center;
+        }
+        .add{
+            background-color: rgb(24, 119, 242);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 6px;
+            margin-right: 3px;
+        }
+        .message{
+            background-color: rgb(230, 230, 230);
+            border: none;
+            font-weight: bold;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="lewa">
+            <div>
+            <img class="photo" src="wisien_logo.png" alt="Profile picture">
+            </div>
+            <div class="name">
+                Olivier Cat
+            </div>
+        </div>
+        <div class="prawa">
+            <button class="add">
+                Add Friend
+            </button>
+            <button class="message">
+                Message
+            </button>
+        </div>
+        
+    </div>
+</body>
+</html>
