@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12abcd</title>
+    <style>
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        .flexboxtwo{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+            justify-content: space-between;
+        }
+        .jn{
+            background-color: lightblue;
+        }
+        .jr{
+            background-color: lightpink;
+        }        
+        .jeden{
+            width: 200px;
+        }
+        .dwa{
+            width: 75px;
+        }
+        .trzy{
+            width: 50px;
+        }
+        .cztery{
+            flex: 1;
+        }
+        .border{
+            height: 50px;
+            border-color: gray;
+            border-width: 2px;
+            border-style: solid;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="jeden jn">
+            200px
+        </div>
+        <div class="dwa jr">
+            75px
+        </div>
+    </div>
+
+    <div class="flexbox">
+        <div class="trzy jn">
+            item1
+        </div>
+        <div class="cztery jr">
+            item2
+        </div>
+        <div class="dwa jn">
+            item3
+        </div>
+    </div>
+
+    <div class="flexboxtwo">
+        <div class="jr">item1</div>
+        <div class="jr">item2</div>
+        <div class="jr">item3</div>
+        <div class="jr">item4</div>
+    </div>
+
+    <div class="flexboxtwo border">
+        <div class="jr">item1</div>
+        <div class="jr">item2</div>
+    </div>
+</body>
+</html>
