@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left_section">
             <img class="hamburger-menu" src="icons/hamburger-menu.svg">
             <img class="youtube-logo" src="icons/youtube-logo.svg">
@@ -19,13 +19,19 @@
             <input class="search_bar" type="textbox" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="icons/search.svg">
+                <div class="tooltip">Search</div>
             </button>
             <button class="voice-search-button">
                 <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                <div class="tooltip">Search witch your voice</div>
             </button>
         </div>
         <div class="right_section">
-            <img class="upload_icon" src="icons/upload.svg">
+            <div class="upload_icon_container">
+                <img class="upload_icon" src="icons/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            
             <img class="youtube_apps_icon" src="icons/youtube-apps.svg">
             <div class="notofications_icon_container">
                 <img class="notifications_icon" src="icons/notifications.svg">
@@ -33,13 +39,48 @@
             </div>
             <img class="current_user_picture" src="channel_pic/channel-1.jpeg">
         </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
-        sidebar
-    </div>
-    
-    <div class="video_grid">
+    <nav class="sidebar">
+        <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>
+            Home
+        </div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/explore.svg">
+            <div>
+            Explore
+        </div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/subscriptions.svg">
+            <div>
+            Subscriptions
+        </div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/originals.svg">
+            <div>
+            Originals
+        </div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/youtube-music.svg">
+            <div>
+            YouTube Music
+        </div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/library.svg">
+            <div>
+            Library
+        </div>
+        </div>
+    </nav>
+    <main>
+    <section class="video_grid">
         <div class="video_preview">
             <div class="thumbnail_row">
                 <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
@@ -185,6 +226,9 @@
                 </p>
             </div>
         </div>
-    </div>
+    </section>
+</main>
 </div>
+</body>
+</html>
    
